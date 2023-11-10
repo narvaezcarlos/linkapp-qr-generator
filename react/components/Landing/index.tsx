@@ -19,7 +19,6 @@ const Landing = () => {
     }
 
     useEffect(() => {
-        //hideHeaderFooter();
         getUrlParams();
     }, []);
 
