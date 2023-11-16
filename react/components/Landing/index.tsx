@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AccountButton from '../AccountButton';
 import StoreButton from '../StoreButton';
 import styles from '../../styles.css';
+import ShareButton from '../ShareButton';
 
 const Landing = () => {
     const [url, setUrl] = useState('');
@@ -37,6 +38,9 @@ const Landing = () => {
                         <img className='db center' src={`https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=${url}`} onLoad={() => handleLoader()}></img>
                         <span className='dib center tc w-90 f3'>Estamos más cerca de ti</span>
                         <span className='dib center tc w-90'>Compra aquí Los productos de OFFCORSS Ahorra tiempo y lleva lo mejor de moda infantil.</span>
+                    </div>
+                    <div className='w-100 flex flex-wrap justify-center align-center'>
+                        <ShareButton url={url} />
                     </div>
                 </div>
                 <div className='w-100 pa3 flex flex-column justify-center align-center'>
