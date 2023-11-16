@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ShareButton from '../ShareButton';
-import PrintButton from '../PrintButton';
 import AccountButton from '../AccountButton';
 import StoreButton from '../StoreButton';
 import styles from '../../styles.css';
 
 const Landing = () => {
-    const [printStatus, setPrintStatus] = useState('flex');
     const [url, setUrl] = useState('');
     const [showStatus, setShowStatus] = useState('dn');
     const [loaderStatus, setLoaderStatus] = useState('flex');
@@ -15,7 +12,7 @@ const Landing = () => {
         const params = new URLSearchParams(location.search);
         const id = params.get('id');
         const src = params.get('src');
-        setUrl(encodeURIComponent(`https://www.linkapp.com.co/tienda?id=${id}&src=${src}`));
+        setUrl(encodeURIComponent(`https://jpdev--ventadirectanewqa.myvtex.com/tienda?id=${id}&src=${src}`));
     }
 
     useEffect(() => {
@@ -36,15 +33,13 @@ const Landing = () => {
             </div>
             <div className={showStatus + ' w-100'}>
                 <div className='w-100 pa3 flex flex-wrap'>
-                    <div className='w-100'>
+                    <div className='w-100 flex flex-column mb6'>
                         <img className='db center' src={`https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=${url}`} onLoad={() => handleLoader()}></img>
-                    </div>
-                    <div className={printStatus + ' w-100 flex-wrap justify-center align-center'}>
-                        <PrintButton setPrintStatus={setPrintStatus} />
-                        <ShareButton url={url} />
+                        <span className='dib center tc w-90 f3'>Estamos más cerca de ti</span>
+                        <span className='dib center tc w-90'>Compra aquí Los productos de OFFCORSS Ahorra tiempo y lleva lo mejor de moda infantil.</span>
                     </div>
                 </div>
-                <div className={printStatus + ' w-100 pa3 flex-column justify-center align-center'}>
+                <div className='w-100 pa3 flex flex-column justify-center align-center'>
                     <AccountButton />
                     <StoreButton url={url} />
                 </div>
