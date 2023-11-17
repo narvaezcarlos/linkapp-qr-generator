@@ -9,7 +9,7 @@ const StoreButton = ({url}: buttonProps) => {
     const [storeLoading, setStoreLoading] = useState('dn');
 
     return (
-        <a href={`${decodeURIComponent(url)}`} className='db w-90 w-50-l mv4 pa4 bn br3 bg-action-primary pointer hover-shadow-3 white center tc no-underline' onClick={() => setStoreLoading('')}>
+        <a href={`${decodeURIComponent(url)}`} className='db w-90 w-50-l mv4 pa3 bn br3 bg-action-primary pointer hover-shadow-3 white center tc no-underline' onClick={() => setStoreLoading('')}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-shopping-cart mr3">
                 <circle cx="9" cy="21" r="1"></circle>
                 <circle cx="20" cy="21" r="1"></circle>
