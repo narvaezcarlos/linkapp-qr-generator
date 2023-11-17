@@ -41,6 +41,7 @@ const Landing = () => {
                         <span className='dib center tc w-90'>Compra aquí los productos de OFFCORSS Ahorra tiempo y lleva lo mejor de moda infantil.</span>
                     </div>
                 </div>
+
                 <div className='w-100 flex flex-column justify-center align-center'>
                     <ShareButton url={url} />
                     <AccountButton />
