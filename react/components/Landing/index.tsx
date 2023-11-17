@@ -13,7 +13,7 @@ const Landing = () => {
         const params = new URLSearchParams(location.search);
         const id = params.get('id');
         const src = params.get('src');
-        setUrl(encodeURIComponent(`https://ventadirectanewqa.myvtex.com/tienda?id=${id}&src=${src}`));
+        setUrl(encodeURIComponent(`https://www.linkapp.com.co/tienda?id=${id}&src=${src}`));
     }
 
     useEffect(() => {
