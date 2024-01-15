@@ -1,7 +1,7 @@
 {
   "vendor": "ventadirectanew",
   "name": "linkapp-qr-generator",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "title": "QR LANDING CANGU ALTIPAL",
   "description": "LANDING FOR QR CANGU ALTIPAL",
   "builders": {
