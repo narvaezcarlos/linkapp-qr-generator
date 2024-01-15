@@ -2,8 +2,8 @@
   "vendor": "ventadirectanew",
   "name": "linkapp-qr-generator",
   "version": "0.0.14",
-  "title": "CHANGE_ME",
-  "description": "CHANGE_ME",
+  "title": "QR LANDING CANGU ALTIPAL",
+  "description": "LANDING FOR QR CANGU ALTIPAL",
   "builders": {
     "react": "3.x",
     "messages": "1.x",
